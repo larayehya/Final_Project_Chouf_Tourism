@@ -1,0 +1,59 @@
+/* Category.module.css */
+
+.category-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px; /* Space between cards horizontally */
+  padding: 20px; /* Space between cards and website borders */
+}
+
+/* Category.css */
+.image-card {
+  position: relative;
+}
+
+.image {
+  max-width: 100%; /* Ensure the image fits within the card */
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 28px; /* Adjust the top position as needed */
+  right: 28px; /* Adjust the right position as needed */
+  z-index: 2; /* Place the icon above the image */
+}
+
+/* Category.css */
+.icon {
+  width: 28px; /* Set the desired width */
+  height: 28px; /* Set the desired height */
+  fill: rgba(0, 0, 0, 0.4); /* Icon fill color */
+  cursor: pointer; /* Add a cursor pointer for interaction */
+}
+
+/* Custom styles for the carousel arrows */
+.carousel-arrow:hover {
+  background-color: transparent; /* Replace with your desired background color */
+  /* Add more styles as needed */
+}
+
+.control-arrow {
+  background-color: unset !important;
+}
+
+/* breadCrump */
+
+/* styles.css */
+.breadcrumb-divider {
+  --bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E");
+  padding: 50px 20px !important;
+  background-color: #ccc;
+}
+
+.chakra-input__left-element {
+  top: 6px !important;
+  z-index: 2 !important;
+  cursor: pointer !important;
+  left: 170px !important;
+}

@@ -1,0 +1,10 @@
+.rayan-navBar {
+  z-index: 9999;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff !important;
+}
+.nav-item {
+  color: #fff !important;
+  text-transform: uppercase !important;
+}

@@ -1,0 +1,13 @@
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE ,
+    password VARCHAR(255),
+);
+
+CREATE TABLE quizzes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title varchar(255) not null,
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME ON UPDATE CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
