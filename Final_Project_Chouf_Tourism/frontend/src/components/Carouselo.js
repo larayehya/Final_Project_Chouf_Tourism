@@ -166,7 +166,7 @@ const Carouselo = () => {
               className={`nav-link ${selectedLink === "all" ? "active" : ""}`}
               onClick={() => setSelectedLink("all")}
             >
-              Active
+              All
             </button>
           </li>
           <li className="nav-item rayanz-nav-item-carouselo">
@@ -174,7 +174,7 @@ const Carouselo = () => {
               className={`nav-link ${selectedLink === "link1" ? "active" : ""}`}
               onClick={() => setSelectedLink("link1")}
             >
-              Link 1
+              Restaurants
             </button>
           </li>
           <li className="nav-item rayanz-nav-item-carouselo">
@@ -182,7 +182,23 @@ const Carouselo = () => {
               className={`nav-link ${selectedLink === "link2" ? "active" : ""}`}
               onClick={() => setSelectedLink("link2")}
             >
-              Link 2
+              Accomidation
+            </button>
+          </li>
+          <li className="nav-item rayanz-nav-item-carouselo">
+            <button
+              className={`nav-link ${selectedLink === "link1" ? "active" : ""}`}
+              onClick={() => setSelectedLink("link1")}
+            >
+              Activities
+            </button>
+          </li>
+          <li className="nav-item rayanz-nav-item-carouselo">
+            <button
+              className={`nav-link ${selectedLink === "link1" ? "active" : ""}`}
+              onClick={() => setSelectedLink("link1")}
+            >
+              Landmarks
             </button>
           </li>
         </ul>

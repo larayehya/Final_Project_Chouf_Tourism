@@ -3,7 +3,7 @@
 .category-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: -35px;
   gap: 20px; /* Space between cards horizontally */
   padding: 20px; /* Space between cards and website borders */
 }
@@ -19,8 +19,8 @@
 
 .favorite-icon {
   position: absolute;
-  top: 28px; /* Adjust the top position as needed */
-  right: 28px; /* Adjust the right position as needed */
+  top: 20px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
   z-index: 2; /* Place the icon above the image */
 }
 

@@ -1,11 +1,32 @@
 // AboutUs.js
 
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 import "../css/Aboutus.css";
 import TeamMemberCard from "./TeamMemberCard";
 import { Link } from "react-router-dom";
+import api from "../api";
+import { Button } from "@chakra-ui/react";
+import { Card, CardBody, Divider } from "@chakra-ui/react";
 
 const AboutUs = () => {
+  const [data, SetData] = useState([]);
+
+  useEffect(() => {
+    getResturants();
+  }, [data]);
+
+  const getResturants = async () => {
+    try {
+      const response = await api.get(
+        "http://127.0.0.1:3001/api/restaurants/getAllRestaurants"
+      );
+      SetData(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <>
       <nav className="breadcrumb-divider" aria-label="breadcrumb">
@@ -20,6 +41,23 @@ const AboutUs = () => {
       </nav>
       {/* Breadcrumb */}
       <div className="about-us-container">
+        {/* --------------------------------------- */}
+        {data.map((resturant) => {
+          return (
+            <Card maxW="sm" boxShadow="none" marginBottom="10px">
+              <CardBody>
+                <div>
+                  <h4>{resturant?.Name}</h4>
+                  <br />
+                  <h2>{resturant?.Images}</h2>
+                </div>
+              </CardBody>
+              <Divider />
+            </Card>
+          );
+        })}
+
+        {/* ----------------------------------------------- */}
         <section id="page-header" class="about-header">
           <h1>Explore</h1>
           <h2>Every Corner in CHOUF</h2>

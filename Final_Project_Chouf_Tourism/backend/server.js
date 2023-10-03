@@ -1,25 +1,25 @@
-// Import required packages
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const dotenv = require("dotenv");
-
+const Routes = require("./routes/Routes");
 dotenv.config();
-
-// Create an instance of Express
 const app = express();
 
-// Middleware for enabling CORS
+//kl she app.use yaane kl she middleware bdna n3uzu
+// Use CORS middleware
 app.use(cors());
-app.use(express.json());
-// Middleware for parsing JSON and URL-encoded data
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
-// Define a sample route
+// Use body-parser middleware for JSON and URL-encoded request bodies
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
+// or
+app.use(express.json());
+
+// Routes
+app.use("/api", Routes); // Assuming userRoutes handles user-related routes
+
 app.listen(process.env.PORT, () => {
+  //listen btshaghel lserver
   console.log(`Server is running on port ${process.env.PORT}`);
 });
-
-// Get the PORT environment variable, or default to 3000
-// const port = process.env.PORT || 3000;

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import React, { useRef, useEffect, useState } from "react";
 import "../App.css";
+// import bannerSecond from "../images/banner-second.jpg";
 
 function HomeOne() {
   const slideRef = useRef(null);
@@ -20,34 +21,36 @@ function HomeOne() {
   const data = [
     {
       id: 1,
-      imgUrl: "https://i.postimg.cc/PrMGqZwx/pexels-m-venter-1659437.jpg",
+      imgUrl:
+        "https://images.unsplash.com/photo-1501960645408-12c9bcfca49f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fExlYmFub258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
       desc: "Some beautiful roads cannot be discovered without getting loss.",
       name: "EXPLORE NATURE",
     },
     {
       id: 2,
       imgUrl:
-        "https://i.postimg.cc/bw6KxhLf/pexels-eberhard-grossgasteiger-1062249.jpg",
+        "https://images.unsplash.com/photo-1582716207913-54a7913db841?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fExlYmFub258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
       desc: "Some beautiful roads cannot be discovered without getting loss.",
       name: "EXPLORE NATURE",
     },
     {
       id: 3,
       imgUrl:
-        "https://i.postimg.cc/CMkTW9Mb/pexels-eberhard-grossgasteiger-572897.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb7rZAGlO8aWBmi9y6iXSEdFxIJHly38BfOw&usqp=CAU",
       desc: "Some beautiful roads cannot be discovered without getting loss.",
-      name: "EXPLORE NATURE",
+      name: "EXPLORE SUNSETS",
     },
     {
       id: 5,
-      imgUrl: "https://i.postimg.cc/6qdkn4bM/pexels-joyston-judah-933054.jpg",
+      imgUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaG707gVBMEq5_Jo-NvhZzRic8LgbY_Tq--A&usqp=CAU",
       desc: "Some beautiful roads cannot be discovered without getting loss.",
       name: "EXPLORE NATURE",
     },
     {
       id: 6,
       imgUrl:
-        "https://i.postimg.cc/RVm59Gqy/pexels-roberto-nickson-2559941.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVE0uYNNJ38ssUyTxUHJI_LYozwDzhXzlTWQ&usqp=CAU",
       desc: "Some beautiful roads cannot be discovered without getting loss.",
       name: "EXPLORE NATURE",
     },
